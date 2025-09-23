@@ -1,0 +1,31 @@
+###
+GET http://127.0.0.1:8000/api/customers/
+
+
+###
+POST http://127.0.0.1:8000/api/customers/
+Content-Type: application/json
+
+{
+  "name": "Oliver Mutuku",
+  "code": "CUST001"
+}
+
+
+### 
+GET http://127.0.0.1:8000/api/orders/
+
+###
+POST http://127.0.0.1:8000/api/orders/
+Content-Type: application/json
+
+{
+  "customer": 1,
+  "item": "Laptop",
+  "amount": "750.00"
+}
+
+
+###
+POST https://docs-generation.vercel.app/generate-quote
+
