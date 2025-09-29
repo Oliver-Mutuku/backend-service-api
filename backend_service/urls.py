@@ -8,7 +8,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('apps.core.urls')),
 
-    path('', TemplateView.as_view(template_name='core/index.html')),
     path('accounts/', include('allauth.urls')),
     path('logout/', LogoutView.as_view())
 ]
